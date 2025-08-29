@@ -9,10 +9,11 @@
 }
 
 body {
-  background-image: url(./img/easter-celebration-with-dreamy-bunny.jpg);
-  background-repeat: repeat;
+  background-image: url(./img/rabbit.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  
+  background-position: center center ;
+  height: 100vh;
 }
 
 
@@ -54,10 +55,12 @@ body {
 
   left: 50%;
 }
-.inside img{
+
+.inside img {
   height: 60%;
   width: auto;
 }
+
 .outside {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -65,7 +68,7 @@ body {
   transform-origin: left;
   transition: 2s;
   cursor: pointer;
-  
+
 }
 
 .front,
@@ -81,11 +84,13 @@ body {
 .front {
   background-color: white;
   text-align: center;
- 
+
 }
-.front img{
+
+.front img {
   height: 50%;
 }
+
 .back {
   transform: rotateY(180deg);
   background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
@@ -101,7 +106,7 @@ body {
   color: #000046;
 }
 
-p{
+p {
   padding-bottom: 10px;
 }
 
@@ -122,6 +127,7 @@ p{
     transform: translateY(0) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-100vh) scale(1.5);
     opacity: 0;
